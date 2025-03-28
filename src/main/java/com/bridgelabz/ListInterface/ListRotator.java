@@ -6,8 +6,8 @@ class ListRotator {
     // Method to rotate a list by k positions
     public static <T> void rotateList(List<T> list, int k) {
         int n = list.size();
-        k = k % n; // Handle cases where k > n
-        if (k < 0) k += n; // Handle negative rotations
+        k = k % n;
+        if (k < 0) k += n;
 
         List<T> temp = new ArrayList<>(list.subList(k, n)); // Elements after k
         temp.addAll(list.subList(0, k)); // Elements before k
