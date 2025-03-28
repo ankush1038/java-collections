@@ -9,7 +9,7 @@ class ListRotator {
         k = k % n;
         if (k < 0) k += n;
 
-        List<T> temp = new ArrayList<>(list.subList(k, n)); // Elements after k
+        List<T> temp = new ArrayList<>(list.subList(k, n )); // Elements after k
         temp.addAll(list.subList(0, k)); // Elements before k
         list.clear();
         list.addAll(temp);
