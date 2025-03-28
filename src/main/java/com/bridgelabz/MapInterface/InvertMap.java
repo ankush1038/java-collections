@@ -30,7 +30,7 @@ public class InvertMap {
             }
 
             // Add the key to the corresponding list for the value
-            inverted.get(value).add(key);
+             inverted.get(value).add(key);
         }
         return inverted;
     }
