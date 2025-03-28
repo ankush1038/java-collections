@@ -14,7 +14,7 @@ public class PolicyUtils {
 
         for (Policy policy : policies) {
             if (policy.getExpiryDate().before(thresholdDate)) {
-                expiringSoon.add(policy);
+                 expiringSoon.add(policy);
             }
         }
         return expiringSoon;
