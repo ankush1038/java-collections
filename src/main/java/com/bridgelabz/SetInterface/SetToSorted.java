@@ -1,11 +1,9 @@
 package com.bridgelabz.SetInterface;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class SetToSorted {
+    // Main method
     public static void main(String[] args) {
         Set<Integer> set = new HashSet<>();
         set.add(5);
@@ -19,6 +17,9 @@ public class SetToSorted {
 
     public static List<Integer> convertToSortedList(Set<Integer> set){
         List<Integer> sortedList = new ArrayList<>(set);
+
+        // Sort the list in ascending order
+        Collections.sort(sortedList);
 
         return sortedList;
     }
